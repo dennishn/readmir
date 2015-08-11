@@ -14,8 +14,6 @@
 
         <n-messages-wrapper></n-messages-wrapper>
 
-        <h1>readmir</h1>
-
         <!-- Application Entry: -->
         <div ui-view="root"></div>
 
@@ -53,6 +51,7 @@
         <script src="bower_components/ngstorage/ngStorage.js"></script>
         <script src="bower_components/showdown/src/showdown.js"></script>
         <script src="bower_components/angular-markdown-directive/markdown.js"></script>
+        <script src="bower_components/angular-utils-ui-breadcrumbs/uiBreadcrumbs.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -81,6 +80,12 @@
 		<script src="modules/yeoman/generator/generator.controller.js"></script>
 		<script src="common/filters/slug-to-readme/slugToReadme.module.js"></script>
 		<script src="common/filters/slug-to-readme/slugToReadme.filter.js"></script>
+		<script src="common/markdownViewer/markdownViewer.module.js"></script>
+		<script src="common/markdownViewer/markdownViewer.directive.js"></script>
+		<script src="modules/_application/navigation/navigation.controller.js"></script>
+		<script src="common/mainNavigationElement/mainNavigationElement.module.js"></script>
+		<script src="common/mainNavigationElement/mainNavigationElement.directive.js"></script>
+		<script src="modules/yeoman/header/header.controller.js"></script>
 		<!-- endbuild -->
 </body>
 </html>

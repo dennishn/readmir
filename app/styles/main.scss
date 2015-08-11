@@ -79,13 +79,16 @@
 @import "../common/core/loadingindicator/loadingindicator";
 
 // Directives
+@import "../common/markdownViewer/markdownViewer";
+@import "../common/mainNavigationElement/mainNavigationElement";
 /* ---> Do not delete this comment (Directives) <--- */
 
 // Modules
 @import "../modules/_application/application";
 @import "../modules/index/index";
-@import "../app/modules/generator/_generator.scss/generator";
-@import "../app/modules/yeoman/_yeoman.scss/yeoman";
-@import "../modules/yeoman/generators/_generators.scss/generators";
-@import "../app/modules/yeoman/generator/_generator.scss/generator";
+@import "../modules/yeoman/yeoman";
+@import "../modules/yeoman/generators/generators";
+@import "../modules/yeoman/generator/generator";
+@import "../modules/_application/navigation/navigation";
+@import "../modules/yeoman/header/header";
 /* ---> Do not delete this comment (Modules) <--- */

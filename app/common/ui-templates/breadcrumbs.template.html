@@ -1,0 +1,5 @@
+<ul class="breadcrumbs">
+    <li ng-repeat="crumb in breadcrumbs" ng-class="{'current': $last}">
+        <a ui-sref="{{ crumb.route }}">{{crumb.displayName}}</a>
+    </li>
+</ul>

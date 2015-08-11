@@ -30,6 +30,9 @@
 			'generators',
 			'yeoman',
 			'slugToReadme',
+			'markdownViewer',
+			'mainNavigationElement',
+			'angularUtils.directives.uiBreadcrumbs',
 			/* ---> Do not delete this comment (ngImports) <--- */
 	]);
 })();

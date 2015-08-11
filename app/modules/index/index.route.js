@@ -8,6 +8,9 @@
 			var Index = {
 				name: 'application.index',
 				url: '/',
+				data: {
+					displayName: 'Home'
+				},
 				views: {
 					'application@application': {
 						templateUrl: 'modules/index/index.template.html',

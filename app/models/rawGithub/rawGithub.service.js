@@ -24,11 +24,9 @@
 
 			$http.get(url)
 				.then(function getReadmeSuccess(result) {
-					console.log(result);
 					deferred.resolve(result.data);
 				})
 				.catch(function getReadmeError(error) {
-					console.log(error);
 					deferred.reject(error);
 				});
 

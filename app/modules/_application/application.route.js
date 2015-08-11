@@ -8,11 +8,19 @@
 			var Application = {
 				name: 'application',
 				abstract: true,
+				data: {
+					breadcrumbProxy: 'application.index'
+				},
 				views: {
-					'root@': {
+					'root': {
 						templateUrl: 'modules/_application/application.template.html',
 						controller: 'Application',
 						controllerAs: 'application'
+					},
+					'navigation@application': {
+						templateUrl: 'modules/_application/navigation/navigation.template.html',
+						controller: 'Navigation',
+						controllerAs: 'navigation'
 					}
 				}
 			};

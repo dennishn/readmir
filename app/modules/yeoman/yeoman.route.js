@@ -9,11 +9,17 @@
 				name: 'application.yeoman',
 				url: '/generators',
 				abstract: true,
+				data: {
+					breadcrumbProxy: 'application.yeoman.generators'
+				},
 				views: {
 					'application@application': {
 						templateUrl: 'modules/yeoman/yeoman.template.html',
 						controller: 'Yeoman',
 						controllerAs: 'yeoman'
+					},
+					'header@application': {
+						templateUrl: 'modules/yeoman/header/header.template.html'
 					}
 				}
 			};
@@ -28,12 +34,15 @@
 						controllerAs: 'generators'
 					}
 				},
+				data: {
+					displayName: 'Yeoman'
+				},
 				resolve: {
 					readme: function(RawGithub) {
 						return RawGithub.getRepositoryReadme()
 							.then(function resolveReadme(result) {
 								return result;
-							})
+							});
 					}
 				}
 			};
@@ -42,23 +51,19 @@
 			var Generator = {
 				name: 'application.yeoman.generator',
 				url: '/:slug',
+				data: {
+					displayName: 'nodes:{{slug}}'
+				},
 				views: {
 					'content': {
-						templateUrl: 'modules/yeoman/generator/generator.template.html',
 						controller: 'YeomanGenerator',
-						controllerAs: 'generator'
+						controllerAs: 'generator',
+						templateUrl: 'modules/yeoman/generator/generator.template.html'
 					}
 				},
 				resolve: {
-					generator: function($stateParams, Generators, $filter, RawGithub) {
-
-						var readmePath = $filter('slugtoreadme')($stateParams.slug, Generators.generators);
-
-						return RawGithub.getGeneratorReadme(readmePath)
-							.then(function resolveReadme(result) {
-								return result;
-							});
-
+					slug: function($stateParams) {
+						return $stateParams.slug;
 					}
 				}
 			};
