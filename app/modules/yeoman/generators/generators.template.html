@@ -1,0 +1,8 @@
+<p>This is the generators view.</p>
+
+<ul>
+    <li ng-repeat="generator in generators.generatorList track by $index">
+        <a ui-sref="application.yeoman.generator({slug: generator.slug})">{{generator.name}}</a>
+    </li>
+</ul>
+
