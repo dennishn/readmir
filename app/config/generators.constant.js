@@ -141,7 +141,7 @@
 					tags: ['angular']
 				},
 				{
-					slug: 'scss',
+					slug: 'scss/',
 					name: 'nodes:scss',
 					filePath: 'scss/readme.md',
 					type: 'basic',

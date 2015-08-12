@@ -33,6 +33,7 @@
 			'markdownViewer',
 			'mainNavigationElement',
 			'angularUtils.directives.uiBreadcrumbs',
+			'angular',
 			/* ---> Do not delete this comment (ngImports) <--- */
 	]);
 })();
