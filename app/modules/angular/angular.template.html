@@ -1,1 +1,4 @@
 <div ui-view="content"></div>
+<shadow-dom>
+    <div ng-bind-html="angular.html | unsafe" dynamic-compile></div>
+</shadow-dom>

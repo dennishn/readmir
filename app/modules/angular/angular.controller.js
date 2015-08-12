@@ -10,9 +10,10 @@
 		/*jshint validthis: true */
 		var vm = this;
 
-		$http.get('https://rawgit.com/nodes-galactic/nMessages/demo-test/demo/index.html')
+		$http.get('common/htmlViewer/test.html')
 			.then(function(response) {
 				console.log(response);
+				vm.html = response.data;
 			});
 
 		activate();

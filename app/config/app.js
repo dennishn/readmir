@@ -34,6 +34,7 @@
 			'mainNavigationElement',
 			'angularUtils.directives.uiBreadcrumbs',
 			'angular',
+			'htmlViewer',
 			/* ---> Do not delete this comment (ngImports) <--- */
 	]);
 })();
