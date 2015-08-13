@@ -1,7 +1,7 @@
-<div id="demoWrapper">
-    <section id="configuration" class="full-section configuration-section" ng-controller="demoCtrl as demo">
-        <h1>LAL {{1+1}} {{demo}}</h1>
-        <button class="large" ng-click="demo.test()">HAHAHA</button>
+<div id="demoWrapper" ng-app="demoApp" ng-controller="demoCtrl as demo">
+    <section id="configuration" class="full-section configuration-section">
+
+        <button class="large" ng-click="demo.createBasicMessage()">HAHAHA</button>
         <div class="container">
             <div class="row">
 
@@ -193,7 +193,7 @@
                         </tbody>
                     </table>
                     <p>You can see more examples in the examples section below.</p>
-                    <button ng-click="demo.createMessage()">Bonus</button>
+                    <button ng-click="demo.createCustomMessage()">Bonus</button>
                 </div>
 
             </div>
