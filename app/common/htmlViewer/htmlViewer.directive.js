@@ -24,6 +24,7 @@
 			function getStringValue() { return (parsed(scope) || '').toString(); }
 			// Recompile if the template changes
 			scope.$watch(getStringValue, function() {
+				console.log('stuff', element);
 				$compile(element, null, 0)(scope);
 				// Emit an event that an element is rendered
 				element.ready(function() {
@@ -58,6 +59,7 @@
 			var root = angular.element(element[0].createShadowRoot());
 			root.append($templateCache.get(USER_STYLES_TEMPLATE));
 			transclude(function(clone) {
+				console.log(clone);
 				root.append(clone);
 			});
 		}

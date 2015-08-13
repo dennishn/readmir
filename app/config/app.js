@@ -35,6 +35,7 @@
 			'angularUtils.directives.uiBreadcrumbs',
 			'angular',
 			'htmlViewer',
+			'oc.lazyLoad',
 			/* ---> Do not delete this comment (ngImports) <--- */
 	]);
 })();

@@ -34,6 +34,11 @@
 						controllerAs: 'modules'
 					}
 				},
+				resolve: {
+					loadModule: function($ocLazyLoad) {
+						return $ocLazyLoad.load('common/htmlViewer/test.js');
+					}
+				},
 				data: {
 					displayName: 'Angular'
 				}
